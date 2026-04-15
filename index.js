@@ -1,6 +1,9 @@
 const Pierre = document.querySelector("#pierre");
 const Ciseaux = document.querySelector("#ciseaux");
 const Feuille = document.querySelector("#feuille");
+const ShowResult = document.querySelector("#instruction");
+const Resultat = document.querySelector("#result");
+
 
 const pierre = "pierre";
 const ciseaux = "ciseaux";
@@ -26,14 +29,20 @@ function choices(choicePlayer, choiceBot) {
     let choicePlayer = choix;
 
     if (choicePlayer === choiceBot) {
-        return "égalité";
+        Resultat.innerText = "Résultat : égalité";
     } 
      else if ((choicePlayer === 'pierre' && choiceBot === 'ciseaux')  (choicePlayer === 'feuille' && choiceBot === 'pierre')  
              (choicePlayer === 'ciseaux' && choiceBot === 'feuille')) {
 
-        return "gagné";
+        Resultat.innerText = "Résultat : Gagner";
     } 
     else {
-        return "perdu";
+        Resultat.innerText = "Résultat : Perdu";
     }
+}
+
+
+
+function ShowResult() {
+    ShowResult.innerText = "Vous avez  choisi : " + choicePlayer + " | le robot a choisi : " + choiceBots;
 }
