@@ -3,6 +3,7 @@ const Ciseaux = document.querySelector("#ciseaux");
 const Feuille = document.querySelector("#feuille");
 const ShowResult = document.querySelector("#instruction");
 const Resultat = document.querySelector("#result");
+const Score = document.querySelector('#score');
 
 
 const pierre = "pierre";
@@ -45,4 +46,16 @@ function choices(choicePlayer, choiceBot) {
 
 function ShowResult() {
     ShowResult.innerText = "Vous avez  choisi : " + choicePlayer + " | le robot a choisi : " + choiceBots;
+}
+
+let score = 0;
+function scores(resultat) {
+    if (resultat == "gagné") {
+        score+=50;
+    } else if(resultat == "égalité"){
+          score;
+    } else if (resultat == "perdu" && score <= 0){
+        score-=10;
+    }
+     Score.innerText= score;
 }
