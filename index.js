@@ -87,8 +87,9 @@ function replaybutton() {
   score = 0;
   Vies = 3;
   perdu = 0;
-  nbvies.innerText = ":heart::heart::heart:";
-  Resultat.innerText = "Résultat :";
+  Score.innerText = "0";
+  nbvies.innerText = "❤️❤️❤️";
+  Resultat.innerText = "";
   ShowResult.innerText = "Choisissez un coup pour commencer !";
   Pierre.disabled = false;
   Ciseaux.disabled = false;
