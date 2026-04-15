@@ -75,6 +75,14 @@ function vie() {
   }
 }
 
+function GameOver() {
+  if (Vies <= 0) {
+    Pierre.disabled = true;
+    Ciseaux.disabled = true;
+    Feuille.disabled = true;
+  }
+}
+
 Pierre.addEventListener("click", () => ChoixJoueur(pierre));
 Ciseaux.addEventListener("click", () => ChoixJoueur(ciseaux));
 Feuille.addEventListener("click", () => ChoixJoueur(feuille));
