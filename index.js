@@ -83,6 +83,17 @@ function GameOver() {
   }
 }
 
+function replaybutton() {
+  score = 0;
+  Vies = 3;
+  perdu = 0;
+  nbvies.innerText = ":heart::heart::heart:";
+  Resultat.innerText = "Résultat :";
+  ShowResult.innerText = "Choisissez un coup pour commencer !";
+  Pierre.disabled = false;
+  Ciseaux.disabled = false;
+  Feuille.disabled = false;
+}
 Pierre.addEventListener("click", () => ChoixJoueur(pierre));
 Ciseaux.addEventListener("click", () => ChoixJoueur(ciseaux));
 Feuille.addEventListener("click", () => ChoixJoueur(feuille));
