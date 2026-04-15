@@ -23,8 +23,17 @@ function botChoice() {
 console.log("Le bot a choisi : " + (botChoice()));
 
 function choices(choicePlayer, choiceBot) {
+    let choicePlayer = choix;
 
     if (choicePlayer === choiceBot) {
         return "égalité";
     } 
+     else if ((choicePlayer === 'pierre' && choiceBot === 'ciseaux')  (choicePlayer === 'feuille' && choiceBot === 'pierre')  
+             (choicePlayer === 'ciseaux' && choiceBot === 'feuille')) {
+
+        return "gagné";
+    } 
+    else {
+        return "perdu";
+    }
 }
