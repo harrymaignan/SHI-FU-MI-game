@@ -5,23 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body>
+  <body class="body">
     <link rel="stylesheet" href="style.css" />
-    <div>
-      <img src="logo/logo.png" alt="" />
-      <h2>SHI-FU-MI</h2>
+    <div class="UpperDiv">
+      <img src="logo/logo.png" alt="" class="logo" />
+      <h2 class="title">SHI-FU-MI</h2>
     </div>
-    <div>
-      <button id="pierre" class="pierre">pierre</button>
-      <button id="feuille" class="feuille">feuille</button>
-      <button id="ciseaux" class="ciseaux">ciseaux</button>
+    <div class="MiddleDiv">
+      <button id="pierre" class="pierre">
+        <img src="logo/002-stone.png" alt="" class="logojeux" />pierre
+      </button>
+      <button id="feuille" class="feuille">
+        <img src="logo/001-paper.png" alt="" class="logojeux" />feuille
+      </button>
+      <button id="ciseaux" class="ciseaux">
+        <img src="logo/003-ciseaux.png" alt="" class="logojeux" />ciseaux
+      </button>
     </div>
 
-    <div class="text">
+    <div class="BottomMiddleDiv">
       <p id="instruction">Choisissez un coup pour commencer !</p>
-      <p id="result" class="result">Résultat: </p>
+      <p id="result" class="result"></p>
     </div>
-    <div class="Donee">
+    <div class="BottomDiv">
       <div class="div">
         <p class="vies-div">Vies</p>
         <p id="vies" class="vies">❤️❤️❤️</p>
